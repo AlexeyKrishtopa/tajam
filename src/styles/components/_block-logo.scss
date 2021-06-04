@@ -1,0 +1,40 @@
+.block-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-family: PlayfairDisplay;
+      font-size: 22px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: #413d4b;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: PlayfairDisplay;
+      font-size: 14px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      text-align: center;
+      color: rgba(47, 45, 53, 0.75);
+      margin-bottom: 50px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 2px;
+        opacity: 0.3;
+        background-color: #413d4b;
+        bottom: -18px;
+        left: 155px;
+      }
+    }
+  }

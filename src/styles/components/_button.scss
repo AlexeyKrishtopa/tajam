@@ -1,0 +1,23 @@
+button {
+  padding: 9px 15px 9px 16px;
+  border-radius: 2px;
+  border: solid 1px #00e0d0;
+  font-family: HammersmithOne;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00e0d0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.1s ease-in;
+  &:hover {
+    background-color: #00e0d0;
+    color: #fff;
+  }
+}
+
+

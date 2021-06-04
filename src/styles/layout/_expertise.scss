@@ -1,0 +1,87 @@
+.expertise {
+  margin-bottom: 68px;
+  .container {
+    padding: 0px;
+  }
+  .expertise__items {
+    ul {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 100%;
+      li {
+        transition: 0.1s ease-in all;
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        border-right: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        max-width: 310px;
+        width: 100%;
+        min-height: 250px;
+        padding-bottom: 39px;
+        padding-top: 39px;
+        padding-right: 32px;
+        padding-left: 32px;
+        .expertise__title {
+          text-transform: uppercase;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.7px;
+          text-align: center;
+          color: #413d4b;
+        }
+        .expertise__description {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: 0.7px;
+          text-align: center;
+          color: rgba(51, 51, 51, 0.75);
+        }
+      }
+      li:nth-child(1) {
+        padding-left: 0px;
+      }
+      li:nth-child(3) {
+        padding-right: 0px;
+        border-right: none;
+      }
+      li:nth-child(4) {
+        padding-left: 0px;
+        border-bottom: none;
+      }
+      li:nth-child(5) {
+        border-bottom: none;
+      }
+      li:nth-child(6) {
+        padding-right: 0px;
+        border-bottom: none;
+        border-right: none;
+      }
+      li:hover {
+        background-color: #4aa3cc;
+        .expertise__title, .expertise__description {
+          color: #ebebeb;
+        }
+        svg {
+          image {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

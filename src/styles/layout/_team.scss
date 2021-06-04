@@ -1,0 +1,37 @@
+.team {
+  background: url('/src/images/seconds-forest-background.png') 0 0 / cover
+    no-repeat;
+  z-index: -2;
+  height: 670px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  .team__fill {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: $color-for-back;
+    opacity: 85%;
+  }
+  .team__logo {
+    h3 {
+      color: #fff;
+    }
+    p {
+      color: #f9f9f9;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 2px;
+        opacity: 0.2;
+        background-color: #f9f9f9;
+        bottom: -18px;
+        left: 155px;
+      }
+    }
+  }
+}

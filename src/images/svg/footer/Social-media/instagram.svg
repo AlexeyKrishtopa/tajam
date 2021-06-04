@@ -1,0 +1,13 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+  <image id="instagram3" x="10.5" y="10.5" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABMElEQVQokY2TTStEcRjFfzNGlGHBXvINZMHCQr6NIr6BLFhRVhZWllJWUsrGBo0kZYq8pKyULOSlZgxHR8+t2+1ezamn+7yde//n9L8lSd3AGjACdAAiHwNAL9AE9oE5JK2rfXykNjfLwGjBl7KYAHqAUvQnTX5tk1zL1F+VfzSeAzfAEDAOLAJHQF/MX6x5L0fxgiRSMZuzs+vBcRTTkt4l3WWISZzG3oykpqSam3VJjVgwtgvIKzF3/izp2oa1gErocD5W4MFUPM3x3WiVUw1jCRgMc9KYj0u0AfwA1b+ZpIvUcRxnUT9JOpD0GPWtpM6UvLqTywzZsZy6TfZjNTM3rpzc55CTqBb0jQcbdQgMx4X/DJ3W9QY0gK74IRJfbJZxkrx9K4733UZ4b0dS/y+Y88ynKWHWcwAAAABJRU5ErkJggg=="/>
+</svg>

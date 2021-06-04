@@ -1,0 +1,13 @@
+<svg id="dribbble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+  <image id="dribbble4" x="10.5" y="10.5" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjElEQVQ4jXWTP0iXURSGH0NBqCGSwMEwXKIhB8tEqE0hSIcWRacaJNCgaBaXhkicokUcHEQQHBoE3RocjYYKFCEXK7Ika+gPVPDIhfPh7fr7HbjwnfO+5/3OPfecBpUa1gcMAjeBBmATWAIWj1GTQHY61U8e2RN1Vn0ZkQO1O8/Jk28E6al6X/1XiDeHYLKhUqA1gKks4UNUk4uczKo7nwtsq68LcksQb4f/MPxRdV79WAlcCaDsRzprga3HlYYj3hTx643AQPTzAdABtAMXgHPAl8BOAY1Z7/8CO8C9FGwDvgOTwB9gH3gDPIpnmwFGgCHgIvAb2ALeA2dTORvqizpXeKz+iHK/qlvqu/j+qc4R77xfJPZl3R5T36rLBWdPXUgfXUFsCWAk/LmMPFGj0cn6K2dXfa62BzBRkE9H/Gr4K+q3fA7SUFQ2Xqcfv2JCrwXxUjnKtwKYVk/UEHiW/eROFS+3sQdYBc4A68CrtG/AZaAX+AzcBdaqhHrrPAYMx1Cldd4FFoD5/1jAIYdHdf0+8jsLAAAAAElFTkSuQmCC"/>
+</svg>

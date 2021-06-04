@@ -1,0 +1,28 @@
+.our-works {
+  .container {
+    .our-works__see-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10px 60px 10px;
+      h3 {
+        font-family: PlayfairDisplay;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1.1;
+      }
+      p {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        letter-spacing: 0.7;
+      }
+    }
+    .our-works__load-more {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

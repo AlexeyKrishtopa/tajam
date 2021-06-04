@@ -1,0 +1,13 @@
+<svg id="gplus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+  <image id="google26" x="10.5" y="11.5" width="15" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABJElEQVQokX2SPyiFYRTGfxSLwSKDu9hEkm6RFLKZlMVmN1tMJgYWZbQYbhmUwUBJlEHpZrjTLclgZrG4UvTT575v9/N53adOvec5/55zelGjDaoVdUe9V7/UC3VD7Q05Z+phrImFfWpDXQv+iE085ZpndqeeF4uPQnI+cT1wC+q2+qi+q2/hfdBJE3P8xXFgpoA6cAW8Ai/hXYtTTsOUydzk/sAt5ri6el2UPWwL44HLjndZWGVX3Yx+x0+HJsaALeATKAEfwGxinRYKnTPrCRpOErFfViRG1aXcCpV2xfHa5XDBVWAAWAaqwAqw3052/BB7ie43IZZdPin7NvFBopVCLBuQlN0dRAwlhE0DDeDhP9kT6rNaU2fUrtC5rFbV+aQq5RscSP2qb8om/wAAAABJRU5ErkJggg=="/>
+</svg>

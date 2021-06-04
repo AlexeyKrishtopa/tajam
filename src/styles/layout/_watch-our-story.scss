@@ -1,0 +1,43 @@
+.watch-our-story {
+  background: url('/src/images/city-background.png') 0 0 / cover no-repeat;
+  z-index: -2;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  .watch-our-story__play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    button {
+      padding: 0;
+      border: none;
+      margin-bottom: 34px;
+    }
+    button:hover {
+      border: none;
+      background-color: transparent;
+    }
+    p {
+      text-transform: uppercase;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

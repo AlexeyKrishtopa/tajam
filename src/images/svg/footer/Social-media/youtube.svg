@@ -1,0 +1,13 @@
+<svg id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+  <image id="youtube13" x="9.5" y="12.5" width="17" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAA7ElEQVQokZ3Su0pDURCF4S8xqPFSWGgjmsJeLOxSiQhW2qVK4yOIWIpgndpS7GwsfAgbLfUlLMTG4C3BIwM7EMI+p3DBhoGZ+WfNsGtFUdSwj2OsYA6zmEYdRXq/GOILH3jFJe4CsomH1PgftWPSTgYwwAV6yUWVdgOynikI2zc4RQePFZDlgCxkEnGn1RTf4hDn+M7UNuvpeDmNr/GS1tvCz+TAMsDIzbha6KIxWdcosRgu3lMcRz/CCTYytYOAvJU4mcI2znBQ4bgfkKdMookrzGOtAhB6js+2hGvs4XO0JxbTL+2XNM/gHt0/7+8wWExBMkYAAAAASUVORK5CYII="/>
+</svg>
