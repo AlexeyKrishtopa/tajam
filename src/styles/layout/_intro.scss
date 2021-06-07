@@ -1,0 +1,93 @@
+.intro {
+  background: url('/src/images/first-forest-background.png') 0 0 / cover
+    no-repeat;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  @include background-fill();
+  &__slider {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    .slick-list {
+      overflow: hidden;
+      margin-top: 140px;
+      margin-bottom: 125px;
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          opacity: 0;
+          transition: opacity ease-in 0.5s;
+          div {
+            text-align: center;
+            .intro__slider-item {
+              max-width: 771px;
+              text-align: center;
+              h2 {
+                font-family: PlayfairDisplay;
+                font-size: 32px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.32px;
+                text-align: center;
+                color: #ffffff;
+                position: relative;
+                margin-bottom: 24px;
+                padding-bottom: 24px;
+                &::before {
+                  position: absolute;
+                  content: '';
+                  width: 50px;
+                  height: 1px;
+                  background-color: #00e0d0;
+                  transform: translate(-50%);
+                  bottom: 0px;
+                  left: 50%;
+                }
+              }
+              p {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.8;
+                letter-spacing: 0.8px;
+                text-align: center;
+                color: #ffffff;
+                margin-bottom: 48px;
+              }
+            }
+          }
+          &.slick-active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      li {
+        margin-right: 5px;
+        button {
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          font-size: 0;
+          border-radius: 50%;
+          border-color: #fff;
+        }
+      }
+      li.slick-active {
+        button {
+          border-color: #00e0d0;
+          background-color: #00e0d0;
+        }
+      }
+    }
+  }
+}

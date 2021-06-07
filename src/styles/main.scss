@@ -1,19 +1,26 @@
+@import './vendor/normalize';
 @import './base/reset';
 @import './abstract/fonts';
 @import './abstract/variables';
+@import './abstract/mixins/_background-fill';
 @import '/src/styles/components/button';
 @import '/src/styles/components/block-logo';
-@import '/src/styles/components/cards';
 @import '/src/styles/layout/header';
+@import '/src/styles/layout/intro';
 @import '/src/styles/layout/our-story';
 @import '/src/styles/layout/watch-our-story';
 @import '/src/styles/layout/expertise';
 @import '/src/styles/layout/team';
 @import '/src/styles/layout/our-works';
 
-
 .container {
-  padding-top: 15px;
   max-width: 960px;
   margin: 0 auto;
+  z-index: 2;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  position: relative;
 }

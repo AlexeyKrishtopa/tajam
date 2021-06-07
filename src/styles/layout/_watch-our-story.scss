@@ -1,11 +1,11 @@
 .watch-our-story {
   background: url('/src/images/city-background.png') 0 0 / cover no-repeat;
-  z-index: -2;
-  height: 670px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  @include background-fill();
   .watch-our-story__play {
     display: flex;
     flex-direction: column;

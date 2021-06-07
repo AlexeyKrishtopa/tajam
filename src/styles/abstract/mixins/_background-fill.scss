@@ -1,0 +1,18 @@
+@mixin background-fill() {
+  &__container {
+    position: relative;
+  }
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(to right, #09052f, #311d5e);
+    opacity: 85%;
+  }
+}

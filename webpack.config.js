@@ -57,6 +57,26 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              {
+                tag: 'a',
+                attribute: 'href',
+                type: 'src',
+              },
+              {
+                tag: 'img',
+                attribute: 'src',
+                type: 'src',
+              },
+            ],
+          },
+        },
+      },
     ],
   },
 }

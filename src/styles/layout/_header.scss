@@ -1,124 +1,57 @@
 .header {
-  background: url('/src/images/first-forest-background.png') 0 0 / cover
-    no-repeat;
-  margin-bottom: 65px;
-  .header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: transparent;
+  transition: all 0.2s;
+
+  &__nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 162px;
-    .header__logo {
-      font-family: Roboto;
-      font-weight: 100;
-      font-size: 30px;
-      color: $color-blue;
-      display: flex;
-      align-items: center;
-      svg {
-        margin-right: 11px;
-      }
-    }
-    .header__nav-bar {
-      display: flex;
-      align-items: center;
-    }
-    .header__nav-bar ul {
-      display: flex;
-      justify-content: space-between;
-      li {
-        margin: 10px 26px 10px 0px;
-        transition: all 0.1s ease-in;
-        a {
-          text-transform: uppercase;
-          text-decoration: none;
-          font-family: Roboto;
-          font-size: 13px;
-          font-weight: 900;
-          color: #fff;
-          &:hover {
-            color: #00e0d0;
-          }
-        }
-      }
-    }
   }
-  .header__slider {
-    min-width: 0;
+  &__logo {
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 30px;
+    color: $color-blue;
     display: flex;
-    flex-direction: column;
-    .slick-list {
-      overflow: hidden;
-      margin-bottom: 125px;
-      .slick-track {
-        display: flex;
-        .slick-slide {
-          div {
-            text-align: center;
-            .header__slider-item {
-              max-width: 771px;
-              text-align: center;
-              h2 {
-                font-family: PlayfairDisplay;
-                font-size: 32px;
-                font-weight: 900;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: 0.32px;
-                text-align: center;
-                color: #ffffff;
-                position: relative;
-                margin-bottom: 48px;
-                &::before {
-                  position: absolute;
-                  content: '';
-                  width: 50px;
-                  height: 1px;
-                  background-color: #00e0d0;
-                  bottom: -25px;
-                  left: 46.5%;
-                }
-              }
-              p {
-                font-family: Roboto;
-                font-size: 14px;
-                font-weight: 300;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.71;
-                letter-spacing: 0.7px;
-                text-align: center;
-                color: #ffffff;
-                margin-bottom: 48px;
-              }
-            }
-          }
-        }
-      }
-    }
-    .slick-dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      li {
-        margin-right: 5px;
-        margin-bottom: 70px;
-        button {
-          width: 10px;
-          height: 10px;
-          padding: 0;
-          font-size: 0;
-          border-radius: 50%;
-          border-color: #fff;
-        }
-      }
-      li.slick-active {
-        button {
-          border-color: #00e0d0;
-          background-color: #00e0d0;
-        }
-      }
+    align-items: center;
+    svg {
+      margin-right: 11px;
     }
   }
+  &__nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav-item {
+    margin: 10px 26px 10px 0px;
+  }
+  &__nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 900;
+    transition: all 0.15s ease-in;
+    color: #fff;
+    &:hover {
+      color: #00e0d0;
+    }
+  }
+  
 }
 
-
+._is_scrolling {
+  background: #2e274d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+.cards-item {
+  margin-right: 20px;
+  &__image {
+    //background-color: white;
+    width: 220px;
+    height: 229px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  &__text {
+    text-align: center;
+    padding: 23px 60px 25px 60px;
+    border: solid 1px #e1e1e1;
+  }
+  &__name {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  &__classification {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.7);
+  }
+}

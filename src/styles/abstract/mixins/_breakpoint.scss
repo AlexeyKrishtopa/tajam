@@ -1,41 +1,29 @@
-@mixin desktop {
-	@media (min-width: (1025px)) {
-		@content;
-	}
-}
-
-@mixin lg-max {
+@mixin extra-large {
   @media (max-width: (1700px)) {
     @content;
   }
 }
 
-@mixin lg {
+@mixin large {
   @media (max-width: (1500px)) {
     @content;
   }
 }
 
-@mixin md {
+@mixin medium {
   @media (max-width: (1200px)) {
     @content;
   }
 }
 
-@mixin sm {
+@mixin small {
   @media (max-width: (768px)) {
     @content;
   }
 }
 
-@mixin xs {
+@mixin x-small {
   @media (max-width: (576px)) {
     @content;
   }
-}
-
-@mixin mobile {
-	@media (max-width: (1024px)) {
-		@content;
-	}
 }

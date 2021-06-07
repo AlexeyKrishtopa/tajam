@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
-        <div class="container">
+      <header class="header">
+        <div class="header_container container">
           <div class="header__nav">
             <div class="header__logo">
               <svg
@@ -30,19 +30,60 @@
               <h1>tajam</h1>
             </div>
             <div class="header__nav-bar">
-              <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">expertise</a></li>
-                <li><a href="#">teams</a></li>
-                <li><a href="#">works</a></li>
-                <li><a href="#">people say</a></li>
-                <li><a href="#">contact</a></li>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#intro" class="header__nav-link" id="nav-link-home"
+                    >home</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    href="#our-story"
+                    class="header__nav-link"
+                    id="nav-link-about"
+                    >about</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    href="#expertise"
+                    class="header__nav-link"
+                    id="nav-link-expertise"
+                    >expertise</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="#team" class="header__nav-link" id="nav-link-teams"
+                    >teams</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    href="#our-works"
+                    class="header__nav-link"
+                    id="nav-link-works"
+                    >works</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link" id="nav-link-people"
+                    >people say</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link" id="nav-link-contact"
+                    >contact</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div class="header__slider">
-            <div class="header__slider-item">
+        </div>
+      </header>
+      <section class="intro" id="intro">
+        <div class="intro_container container">
+          <div class="intro__slider">
+            <div class="intro__slider-item">
               <h2>We Are Awesome Creative Agency</h2>
               <p>
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
@@ -53,8 +94,8 @@
               </p>
               <button>learn more</button>
             </div>
-            <div class="header__slider-item">
-              <h2>We Are Awesome Creative Agency</h2>
+            <div class="intro__slider-item">
+              <h2>We Are Awesome Better Agency</h2>
               <p>
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
                 vel velit auctor aliquet. Aenean sollicitudin, lorem quis
@@ -64,8 +105,8 @@
               </p>
               <button>learn more</button>
             </div>
-            <div class="header__slider-item">
-              <h2>We Are Awesome Creative Agency</h2>
+            <div class="intro__slider-item">
+              <h2>We Are Awesome Proffesional Agency</h2>
               <p>
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
                 vel velit auctor aliquet. Aenean sollicitudin, lorem quis
@@ -75,8 +116,8 @@
               </p>
               <button>learn more</button>
             </div>
-            <div class="header__slider-item">
-              <h2>We Are Awesome Creative Agency</h2>
+            <div class="intro__slider-item">
+              <h2>We Are Awesome Favorite Agency</h2>
               <p>
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
                 vel velit auctor aliquet. Aenean sollicitudin, lorem quis
@@ -88,10 +129,9 @@
             </div>
           </div>
         </div>
-        <div class="header__fill"></div>
-      </div>
-      <div class="our-story">
-        <div class="container">
+      </section>
+      <section class="our-story" id="our-story">
+        <div class="our-story__container container">
           <div class="our-story__image">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,9 +166,9 @@
             <button class="our-story__button">learn more</button>
           </div>
         </div>
-      </div>
-      <div class="watch-our-story">
-        <div class="container">
+      </section>
+      <section class="watch-our-story" id="watch-our-story">
+        <div class="watch-our-story__container container">
           <div class="watch-our-story__play">
             <button>
               <svg
@@ -163,10 +203,9 @@
             <p>watch our story</p>
           </div>
         </div>
-        <div class="watch-our-story__fill"></div>
-      </div>
-      <div class="expertise">
-        <div class="container">
+      </section>
+      <section class="expertise" id="expertise">
+        <div class="expertise__container container">
           <div class="expertise__logo block-logo">
             <h3>EXPERTISE</h3>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
@@ -308,82 +347,104 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="team">
-        <div class="container">
+      </section>
+      <section class="team" id="team">
+        <div class="team__container container">
           <div class="team__logo block-logo">
             <h3>MEET OUR AMAZING TEAM</h3>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
           </div>
-          <div class="team__cards cards">
-            <ul>
-              <li>
-                <div class="cards__image"></div>
-                <div class="cards__text">
-                  <p class="name">SEMF UCUK</p>
-                  <p class="classification">CEO & FOUNDER</p>
+          <div class="team__cards">
+            <ul class="team__cards-list">
+              <li class="team__cards-item cards-item">
+                <div class="cards-item__image">
+                  <img src="./images/team/lil-krystalll.png" alt="" />
+                </div>
+                <div class="cards-item__text">
+                  <p class="cards-item__name">SEMF UCUK</p>
+                  <p class="cards-item__classification">CEO & FOUNDER</p>
                 </div>
               </li>
-              <li>
-                <div class="cards__image"></div>
-                <div class="cards__text">
-                  <p class="name">DIK ADALIN</p>
-                  <p class="classification">ENGINEERING</p>
+              <li class="team__cards-item cards-item">
+                <div class="cards-item__image">
+                  <img src="./images/team/lil-krystalll.png" alt="" />
+                </div>
+                <div class="cards-item__text">
+                  <p class="cards-item__name">DIK ADALIN</p>
+                  <p class="cards-item__classification">ENGINEERING</p>
                 </div>
               </li>
-              <li>
-                <div class="cards__image"></div>
-                <div class="cards__text">
-                  <p class="name">JENG KOL</p>
-                  <p class="classification">DESIGNER</p>
+              <li class="team__cards-item cards-item">
+                <div class="cards-item__image">
+                  <img src="./images/team/lil-krystalll.png" alt="" />
+                </div>
+                <div class="cards-item__text">
+                  <p class="cards-item__name">JENG KOL</p>
+                  <p class="cards-item__classification">DESIGNER</p>
                 </div>
               </li>
-              <li>
-                <div class="cards__image"></div>
-                <div class="cards__text">
-                  <p class="name">PET ROMAK</p>
-                  <p class="classification">MARKETING</p>
+              <li class="team__cards-item cards-item">
+                <div class="cards-item__image">
+                  <img src="./images/team/lil-krystalll.png" alt="" />
+                </div>
+                <div class="cards-item__text">
+                  <p class="cards-item__name">PET ROMAK</p>
+                  <p class="cards-item__classification">MARKETING</p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="team__buttom"></div>
-        </div>
-        <div class="team__fill"></div>
-      </div>
-      <div class="our-works">
-        <div class="container">
-          <div class="our-works__see-all">
-            <h3>OUR WORKS</h3>
-            <p><a href="#">See All Project in dribbble</a></p>
+          <div class="team__button-form">
+            <p class="team__moto">
+              Become part of our dream team, let’s join us !
+            </p>
+            <button class="team__join-button">WE ARE HIRING</button>
           </div>
         </div>
-      </div>
-      <div class="our-wroks"><div class="our-works__gallery"></div></div>
-      <div class="our-works">
-        <div class="container">
-          <div class="our-works__load-more">
-            <button>LOAD MORE</button>
+      </section>
+      <section class="our-works" id="our-works">
+        <div class="our-works__container"></div>
+        <div class="our-works__container-fluid">
+          <div class="our-works__gallery" id="our-works__gallery">
+            <a href="/src/images/team/lil-krystalll.png">
+              <img src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
+            <a href="/src/images/team/lil-krystalll.png">
+              <img class="our-works_img" src="/src/images/team/lil-krystalll.png" alt="" />
+            </a>
           </div>
         </div>
-      </div>
-      <div class="news-clients">
-        <div class="container">
-          <div class="news">
-            <h4 class="news-title">GIVE US A GOOD NEWS</h4>
-          </div>
-          <div class="client">
-            <h4 class="client-title">OUR HAPPY CLIENT</h4>
-            <form action="#">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <button type="submit">SUBMIT</button>
-            </form>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>

@@ -1,13 +1,14 @@
 import $ from 'jquery'
 import 'slick-carousel'
 
-$('.header__slider').slick({
+$('.intro__slider').slick({
   arrows: false,
   dots: true,
+  draggable: false,
   // adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 500,
+  speed: 400,
   easing: 'ease',
   // infinite: true,
   // initialSlide: 0,

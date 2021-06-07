@@ -1,22 +1,14 @@
+@import '/src/styles/components/cards-item';
+
 .team {
+  padding-top: 70px;
+  padding-bottom: 70px;
   background: url('/src/images/seconds-forest-background.png') 0 0 / cover
     no-repeat;
-  z-index: -2;
-  height: 670px;
-  position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 55px;
-  .team__fill {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    min-height: 100%;
-    min-width: 100%;
-    background-color: $color-for-back;
-    opacity: 85%;
-  }
-  .team__logo {
+  @include background-fill();
+  &__logo {
     h3 {
       color: #fff;
     }
@@ -33,5 +25,30 @@
         left: 155px;
       }
     }
+  }
+  &__cards-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  &__cards-item:last-child {
+    margin-right: 0;
+  }
+  &__button-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__moto {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #f3f3f3;
+    margin-bottom: 26px;
   }
 }
