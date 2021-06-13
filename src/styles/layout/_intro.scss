@@ -79,7 +79,13 @@
           padding: 0;
           font-size: 0;
           border-radius: 50%;
-          border-color: #fff;
+          border: 1px solid #fff;
+          background: transparent;
+          &:hover {
+            background-color: #00e0d0;
+            color: #fff;
+            cursor: pointer;
+          }
         }
       }
       li.slick-active {

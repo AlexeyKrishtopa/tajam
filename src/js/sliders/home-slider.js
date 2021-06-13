@@ -4,7 +4,7 @@ import 'slick-carousel'
 $('.intro__slider').slick({
   arrows: false,
   dots: true,
-  draggable: false,
+  draggable: true,
   // adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,

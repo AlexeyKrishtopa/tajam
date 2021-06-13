@@ -1,4 +1,4 @@
-button {
+.tajam-button {
   padding: 9px 15px 9px 16px;
   border-radius: 2px;
   border: solid 1px #00e0d0;
@@ -17,6 +17,7 @@ button {
   &:hover {
     background-color: #00e0d0;
     color: #fff;
+    cursor: pointer;
   }
 }
 

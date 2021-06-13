@@ -1,7 +1,8 @@
-form {
+.tajam-form {
+  max-width: 460px;
   input {
     display: block;
-    width: 460px;
+    width: 100%;
     transition: all 0.1s ease-in;
     &:focus {
       border: 1px solid #413d4b;
@@ -23,7 +24,7 @@ form {
     height: 200px;
     margin-bottom: 21px;
     display: block;
-    width: 460px;
+    width: 100%;
     transition: all 0.1s ease-in;
     &:focus {
       border: 1px solid #413d4b;

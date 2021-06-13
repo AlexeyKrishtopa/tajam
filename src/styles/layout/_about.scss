@@ -85,18 +85,17 @@
       height: 70px;
       z-index: 0;
       li {
-        margin: 0 7px;
         box-sizing: border-box;
-        width: 45px;
-        height: 45px;
+        width: 70px;
+        height: 70px;
         padding: 0;
-        border-radius: 50%;
-        overflow: hidden;
-        transition: all ease-in 0.2s;
         button {
-          width: 100%;
-          height: 100%;
+          margin-top: 12.5px;
+          width: 45px;
+          height: 45px;
           background: url('/src/images/team/lil-krystalll.png') 0 0 / cover;
+          border-radius: 50%;
+          overflow: hidden;
           opacity: 0.5;
           border: none;
           font-size: 0;
@@ -104,9 +103,10 @@
         }
       }
       li.slick-active {
-        width: 70px;
-        height: 70px;
         button {
+          margin-top: 0px;
+          width: 70px;
+          height: 70px;
           opacity: 1;
         }
       }
@@ -144,17 +144,23 @@
   .about {
     &__slider {
       .slick-dots {
-        max-width: 200px;
+        max-width: 210px;
         margin: 0 auto;
+        li {
+          width: 60px;
+          height: 50px;
+        }
         li.slick-active {
-          width: 45px;
-          height: 45px;
           button {
+            margin-top: 12.5px;
+            width: 45px;
+            height: 45px;
             opacity: 1;
           }
         }
       }
       .slick-arrow {
+        bottom: 0px;
         &.slick-prev {
           left: 20%;
         }
@@ -169,17 +175,6 @@
 @include x-small {
   .about {
     &__slider {
-      .slick-dots {
-        max-width: 200px;
-        margin: 0 auto;
-        li.slick-active {
-          width: 45px;
-          height: 45px;
-          button {
-            opacity: 1;
-          }
-        }
-      }
       .slick-arrow {
         &.slick-prev {
           left: 5%;
