@@ -1,9 +1,7 @@
 @import '/src/styles/abstract/mixins/font-face';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
 
 @include font-face(Roboto, 'Roboto-Black', 900);
 @include font-face(Roboto, 'Roboto-Thin', 100);
 @include font-face(HammersmithOne, 'HammersmithOne-Regular', 500);
 @include font-face(HammersmithOne, 'Roboto-Light', 300);
-@include font-face(PlayfairDisplay, 'PlayfairDisplay-Bold', 700);
-@include font-face(PlayfairDisplay, 'PlayfairDisplay-Black', 900);

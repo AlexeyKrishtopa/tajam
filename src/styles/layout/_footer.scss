@@ -1,0 +1,129 @@
+.footer {
+  @include background-fill();
+  background: url('/src/images/office-background.png') 0 0 / 100% no-repeat;
+  &__container {
+    padding: 70px 10px;
+  }
+  &__top-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 70px;
+  }
+  &__about {
+    flex: 0 0 calc(100% / 3);
+  }
+  &__about-logo {
+    margin-bottom: 25px;
+  }
+  &__about-text {
+    margin-top: 27px;
+    padding-right: 36px;
+  }
+  &__contacts {
+    flex: 0 0 calc(100% / 3);
+  }
+  &__contacts-logo {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 12.25px 0;
+    margin-bottom: 25px;
+  }
+  &__contacts-text {
+    padding-right: 50px;
+    margin-bottom: 27px;
+  }
+  &__contacts-phone {
+  }
+  &__in-touch {
+    flex: 0 0 calc(100% / 3);
+  }
+  &__in-touch-logo {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 12.25px 0;
+    margin-bottom: 25px;
+  }
+  &__in-touch-form {
+    display: flex;
+    margin-bottom: 27px;
+  }
+  &__in-touch-input {
+    width: 211px;
+    border: 1px solid #88868e;
+    color: #88868e;
+    margin-right: 10px;
+    margin-bottom: 0;
+    &:focus {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+  &__in-touch-submit {
+    opacity: 0.5;
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    padding: 0;
+    width: 70px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    &:hover {
+      opacity: 1;
+      background-color: #ffffff;
+    }
+  }
+  &__in-touch-list {
+    display: flex;
+  }
+  &__in-touch-item {
+    margin-right: 8px;
+  }
+
+  &__bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__links-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__links-item {
+    margin-right: 31px;
+    a {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: 0.35px;
+      text-align: right;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  &__copy {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: 0.35px;
+    text-align: right;
+    color: #ffffff;
+  }
+}

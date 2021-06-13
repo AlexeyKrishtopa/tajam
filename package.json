@@ -35,10 +35,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "chocolat": "^1.0.4",
     "jquery": "^3.6.0",
-    "lightgallery.js": "^1.4.0",
+    "lightgallery": "^2.1.3",
     "slick-carousel": "^1.8.1"
   }
 }

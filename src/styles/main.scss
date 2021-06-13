@@ -1,17 +1,29 @@
 @import './vendor/normalize';
+
 @import './base/reset';
+
 @import './abstract/fonts';
 @import './abstract/variables';
 @import './abstract/mixins/_background-fill';
+@import '/src/styles/abstract/mixins/breakpoint';
+
 @import '/src/styles/components/button';
+@import '/src/styles/components/input';
+@import '/src/styles/components/form';
 @import '/src/styles/components/block-logo';
-@import '/src/styles/layout/header';
-@import '/src/styles/layout/intro';
-@import '/src/styles/layout/our-story';
-@import '/src/styles/layout/watch-our-story';
-@import '/src/styles/layout/expertise';
-@import '/src/styles/layout/team';
-@import '/src/styles/layout/our-works';
+@import '/src/styles/components/main-logo';
+
+@import './layout/header';
+@import './layout/intro';
+@import './layout/our-story';
+@import './layout/watch-our-story';
+@import './layout/expertise';
+@import './layout/team';
+@import './layout/our-works';
+@import './layout/about';
+@import './layout/contact';
+@import './layout/footer';
+
 
 .container {
   max-width: 960px;

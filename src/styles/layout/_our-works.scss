@@ -1,32 +1,118 @@
 .our-works {
-  &__container {
-  }
   &__container-fluid {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
+    text-align: center;
   }
-  &__see-all {
+  &__load-more-button {
+    margin: 70px 0;
+  }
+  &__gallery {
+    display: flex;
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  &__gallery-col {
+    flex: 0 0 calc(100% / 6);
+    box-sizing: border-box;
+  }
+  &__gallery-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: calc(200% * 100 / 267);
+    box-sizing: border-box;
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-size: 0;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 10px 60px 10px;
-    h3 {
-      font-family: PlayfairDisplay;
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 1.1;
+    padding: 65px 0;
+    & > *:first-child {
+      margin: 0 10px;
     }
-    p {
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 300;
-      font-stretch: normal;
-      letter-spacing: 0.7;
+    & > *:last-child {
+      margin: 0 26px;
     }
   }
-  &__load-more {
+  &__title {
+    font-family: PlayfairDisplay;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #413d4b;
+  }
+  &__see-all {
     text-decoration: none;
-    display: flex;
-    justify-content: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: right;
+    color: #413d4b;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -18px;
+      bottom: 10%;
+      background: url('/src/images/our-works/arrow.png');
+      width: 8px;
+      height: 13px;
+    }
+  }
+}
+
+.lg-container {
+  button:hover {
+    background: transparent;
+  }
+}
+
+.lg-backdrop.in {
+  opacity: 0.8;
+}
+
+@include medium {
+  .our-works {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 4);
+    }
+  }
+}
+
+@include small {
+  .our-works {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+}
+
+@include x-small {
+  .our-works {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 2);
+    }
   }
 }

@@ -1,0 +1,193 @@
+.about {
+  @include background-fill();
+  background: url('/src/images/third-forest-background.png') 0 0 / cover;
+  padding: 70px 0;
+  &__body {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+  &__slider {
+    text-align: center;
+  }
+  &__slider-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+  }
+  &__slider-logo {
+    display: block;
+    width: 32px;
+    height: 26px;
+    background: url('/src/images/about/quotes.png') 0 0 / 100% no-repeat;
+  }
+  &__item-text {
+    text-indent: 20px;
+    font-family: 'PlayfairDisplay';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 52px;
+  }
+  &__item-name {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.57;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__item-position {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.69;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__slider {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .slick-list {
+      overflow: hidden;
+      // margin-top: 42px;
+      margin-bottom: 52px;
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          opacity: 0;
+          transition: opacity ease-in 0.5s;
+          div {
+            text-align: center;
+            .about__slider-item {
+              text-align: center;
+              position: relative;
+            }
+          }
+          &.slick-active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      z-index: 0;
+      li {
+        margin: 0 7px;
+        box-sizing: border-box;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all ease-in 0.2s;
+        button {
+          width: 100%;
+          height: 100%;
+          background: url('/src/images/team/lil-krystalll.png') 0 0 / cover;
+          opacity: 0.5;
+          border: none;
+          font-size: 0;
+          transition: all ease-in 0.2s;
+        }
+      }
+      li.slick-active {
+        width: 70px;
+        height: 70px;
+        button {
+          opacity: 1;
+        }
+      }
+    }
+    .slick-arrow {
+      position: absolute;
+      z-index: 3;
+      font-size: 0;
+      bottom: 25px;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border: none;
+      transition: all ease-in 0.2s;
+      &.slick-prev {
+        left: 185px;
+        background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+        transform: rotate(180deg);
+        &:hover {
+          background-image: url('/src/images/about/next-hover.svg');
+        }
+      }
+      &.slick-next {
+        right: 185px;
+        background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+        &:hover {
+          background-image: url('/src/images/about/next-hover.svg');
+        }
+      }
+    }
+  }
+}
+
+@include small {
+  .about {
+    &__slider {
+      .slick-dots {
+        max-width: 200px;
+        margin: 0 auto;
+        li.slick-active {
+          width: 45px;
+          height: 45px;
+          button {
+            opacity: 1;
+          }
+        }
+      }
+      .slick-arrow {
+        &.slick-prev {
+          left: 20%;
+        }
+        &.slick-next {
+          right: 20%;
+        }
+      }
+    }
+  }
+}
+
+@include x-small {
+  .about {
+    &__slider {
+      .slick-dots {
+        max-width: 200px;
+        margin: 0 auto;
+        li.slick-active {
+          width: 45px;
+          height: 45px;
+          button {
+            opacity: 1;
+          }
+        }
+      }
+      .slick-arrow {
+        &.slick-prev {
+          left: 5%;
+        }
+        &.slick-next {
+          right: 5%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.main-logo {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 30px;
+  color: $color-blue;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  svg {
+    margin-right: 11px;
+  }
+}

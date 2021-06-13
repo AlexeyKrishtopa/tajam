@@ -1,0 +1,37 @@
+form {
+  input {
+    display: block;
+    width: 460px;
+    transition: all 0.1s ease-in;
+    &:focus {
+      border: 1px solid #413d4b;
+      opacity: 0.7;
+    }
+  }
+  textarea.form-controll {
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    text-align: left;
+    margin-bottom: 21px;
+    color: #413d4b;
+    padding: 14px 20px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    height: 200px;
+    margin-bottom: 21px;
+    display: block;
+    width: 460px;
+    transition: all 0.1s ease-in;
+    &:focus {
+      border: 1px solid #413d4b;
+      opacity: 0.7;
+    }
+  }
+  button {
+    display: inline-block;
+    padding: 13px 30px 9px 30px;
+  }
+}

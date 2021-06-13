@@ -1,0 +1,48 @@
+.contact {
+  &__body {
+    padding: 70px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__massage {
+    flex: 0 0 470px;
+    padding: 0 10px;
+  }
+  &__client {
+    flex: 0 0 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  &__client-list {
+    flex: 1 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__client-item {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:nth-child(2n) {
+        justify-content: flex-end;
+    }
+  }
+  &__title {
+    font-family: PlayfairDisplay;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #413d4b;
+    text-transform: uppercase;
+  }
+  &__client-title {
+    margin-bottom: 20px;
+  }
+  &__massage-title {
+    margin-bottom: 35px;
+  }
+}

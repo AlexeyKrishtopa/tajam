@@ -13,9 +13,5 @@ $('.intro__slider').slick({
   // infinite: true,
   // initialSlide: 0,
   centerMode: true,
-  // responsive: [
-  //  { breakpoint: 768, settings: { slidesToShow: 2 } },
-  //  { breakpoint: 576, settings: { slidesToShow: 2 } },
-  //  { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-  // ],
+  responsive: [{ breakpoint: 768, settings: { draggable: true } }],
 })
