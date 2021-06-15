@@ -41,7 +41,7 @@
   &__contacts-text {
     padding-right: 10px;
     padding-left: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 10px;
     position: relative;
     &:before {
       content: '';
@@ -84,9 +84,12 @@
   &__in-touch-input {
     width: 211px;
     border: 1px solid #88868e;
-    color: #88868e;
+
     margin-right: 10px;
     margin-bottom: 0;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.75);
+    }
     &:focus {
       border: 1px solid #fff;
       color: #fff;
@@ -110,11 +113,11 @@
   }
   &__in-touch-list {
     display: flex;
+    flex-wrap: wrap;
   }
   &__in-touch-item {
     margin-right: 8px;
   }
-
   &__bottom-row {
     display: flex;
     flex-wrap: wrap;

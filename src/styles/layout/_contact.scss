@@ -45,9 +45,6 @@
   &__massage-title {
     margin-bottom: 35px;
   }
-  &__massage-form {
-    // width: 100%;
-  }
 
   @include medium {
     &__body {
@@ -67,8 +64,7 @@
       max-width: 470px;
       width: 100%;
     }
-    &__client {
-    }
+
     &__client-list {
       justify-content: center;
     }
@@ -84,33 +80,13 @@
     &__title {
       text-align: center;
     }
-    &__client-title {
-    }
-    &__massage-title {
-    }
   }
 
   @include x-small {
-    &__body {
-    }
-    &__massage {
-    }
-    &__client {
-    }
     &__client-list {
       flex-wrap: nowrap;
       flex-direction: column;
       align-items: center;
-    }
-    &__client-item {
-      &:nth-child(2n) {
-      }
-    }
-    &__title {
-    }
-    &__client-title {
-    }
-    &__massage-title {
     }
   }
 }

@@ -6,6 +6,7 @@ import './js/sliders/about-slider'
 import handleScroll from './js/header/handle-scroll'
 import handelBurger from './js/burger/handle-burger'
 import './js/gallery/our-works-gallery'
+import './js/modal-video/modal-video'
 
 window.onload = () => {
   handleScroll()

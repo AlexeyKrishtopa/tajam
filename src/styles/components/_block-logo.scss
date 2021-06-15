@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     h3 {
-      font-family: PlayfairDisplay;
+      font-family: 'Playfair Display';
       font-size: 22px;
       font-weight: bold;
       font-stretch: normal;
@@ -16,7 +16,7 @@
       margin-bottom: 16px;
     }
     p {
-      font-family: PlayfairDisplay;
+      font-family: 'Playfair Display';
       font-size: 14px;
       font-weight: 400;
       font-stretch: normal;
@@ -24,18 +24,19 @@
       line-height: normal;
       text-align: center;
       color: rgba(47, 45, 53, 0.75);
-      margin-bottom: 50px;
+      margin-bottom: 35px;
+      padding-bottom: 15px;
       position: relative;
-      &::before {
+      &::after {
         position: absolute;
         content: '';
         width: 50px;
         height: 2px;
         opacity: 0.3;
         background-color: #413d4b;
-        bottom: -18px;
-        left: 50%;
-        transform: translate(-50%);
+        top: 100%;
+        right: 49%;
+        transform: translate(50%);
       }
     }
   }

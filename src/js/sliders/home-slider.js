@@ -12,6 +12,8 @@ $('.intro__slider').slick({
   easing: 'ease',
   // infinite: true,
   // initialSlide: 0,
+  autoplay: true,
+  autoplaySpeed: 2500,
   centerMode: true,
   responsive: [{ breakpoint: 768, settings: { draggable: true } }],
 })

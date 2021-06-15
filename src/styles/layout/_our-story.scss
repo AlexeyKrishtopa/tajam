@@ -41,14 +41,11 @@
     text-align: left;
     color: rgba(65, 61, 75, 0.75);
   }
-}
-
-@include medium{
-  .our-story{
+  @include medium {
     &__image {
       margin: 0 100px 50px 100px;
     }
-    &__content { 
+    &__content {
       text-align: center;
     }
     &__title {
@@ -56,6 +53,7 @@
     }
     &__text {
       text-align: center;
+      padding: 0 20px;
     }
   }
 }

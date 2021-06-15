@@ -49,7 +49,7 @@
     }
   }
   &__title {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display';
     font-size: 22px;
     font-weight: bold;
     font-stretch: normal;
@@ -81,6 +81,23 @@
       height: 13px;
     }
   }
+  @include medium {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 4);
+    }
+  }
+
+  @include small {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+
+  @include x-small {
+    &__gallery-col {
+      flex: 0 0 calc(100% / 2);
+    }
+  }
 }
 
 .lg-container {
@@ -91,28 +108,4 @@
 
 .lg-backdrop.in {
   opacity: 0.8;
-}
-
-@include medium {
-  .our-works {
-    &__gallery-col {
-      flex: 0 0 calc(100% / 4);
-    }
-  }
-}
-
-@include small {
-  .our-works {
-    &__gallery-col {
-      flex: 0 0 calc(100% / 3);
-    }
-  }
-}
-
-@include x-small {
-  .our-works {
-    &__gallery-col {
-      flex: 0 0 calc(100% / 2);
-    }
-  }
 }

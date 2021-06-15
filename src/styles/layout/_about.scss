@@ -3,7 +3,7 @@
   background: url('/src/images/third-forest-background.png') 0 0 / cover;
   padding: 70px 0;
   &__body {
-    max-width: 770px;
+    max-width: 870px;
     margin: 0 auto;
   }
   &__slider {
@@ -22,11 +22,15 @@
   }
   &__item-text {
     text-indent: 20px;
-    font-family: 'PlayfairDisplay';
+    font-family: 'Playfair Display';
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 1.4;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: 0.3px;
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 52px;
@@ -49,139 +53,134 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
   }
-
   &__slider {
     min-width: 0;
     display: flex;
     flex-direction: column;
     position: relative;
-    .slick-list {
-      overflow: hidden;
-      // margin-top: 42px;
-      margin-bottom: 52px;
-      .slick-track {
-        display: flex;
-        .slick-slide {
-          opacity: 0;
-          transition: opacity ease-in 0.5s;
-          div {
-            text-align: center;
-            .about__slider-item {
-              text-align: center;
-              position: relative;
-            }
-          }
-          &.slick-active {
-            opacity: 1;
-          }
-        }
+  }
+  .slick-list {
+    overflow: hidden;
+    margin-bottom: 52px;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-slide {
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    div {
+      text-align: center;
+      .about__slider-item {
+        text-align: center;
+        position: relative;
       }
     }
-    .slick-dots {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      height: 70px;
-      z-index: 0;
-      li {
-        box-sizing: border-box;
-        width: 70px;
-        height: 70px;
-        padding: 0;
-        button {
-          margin-top: 12.5px;
-          width: 45px;
-          height: 45px;
-          background: url('/src/images/team/lil-krystalll.png') 0 0 / cover;
-          border-radius: 50%;
-          overflow: hidden;
-          opacity: 0.5;
-          border: none;
-          font-size: 0;
-          transition: all ease-in 0.2s;
-        }
+    &.slick-active {
+      opacity: 1;
+    }
+  }
+  .slick-dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    z-index: 0;
+    li {
+      box-sizing: border-box;
+      width: 45px;
+      height: 45px;
+      margin: 0 7px;
+      padding: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all ease-in 0.2s;
+      button {
+        width: 100%;
+        height: 100%;
+        background: url('/src/images/team/lil-krystalll.png') 0 0 / cover;
+        opacity: 0.5;
+        border: none;
+        font-size: 0;
+        cursor: pointer;
       }
+    }
+    li.slick-active {
+      width: 70px;
+      height: 70px;
+      button {
+        margin-top: 0px;
+        opacity: 1;
+      }
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    z-index: 3;
+    font-size: 0;
+    bottom: 25px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    transition: all ease-in 0.2s;
+    &.slick-prev {
+      left: 240px;
+      background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+      transform: rotate(180deg);
+      &:hover {
+        background-image: url('/src/images/about/next-hover.svg');
+      }
+    }
+    &.slick-next {
+      right: 240px;
+      background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+      &:hover {
+        background-image: url('/src/images/about/next-hover.svg');
+      }
+    }
+  }
+  @include medium {
+    .slick-arrow {
+      bottom: 20px;
+      &.slick-prev {
+        left: 25%;
+      }
+      &.slick-next {
+        right: 25%;
+      }
+    }
+  }
+  @include small {
+    .slick-dots {
+      max-width: 210px;
+      margin: 0 auto;
       li.slick-active {
+        width: 45px;
+        height: 45px;
         button {
-          margin-top: 0px;
-          width: 70px;
-          height: 70px;
           opacity: 1;
         }
       }
     }
     .slick-arrow {
-      position: absolute;
-      z-index: 3;
-      font-size: 0;
-      bottom: 25px;
-      width: 20px;
-      height: 20px;
-      padding: 0;
-      border: none;
-      transition: all ease-in 0.2s;
+      bottom: 20px;
       &.slick-prev {
-        left: 185px;
-        background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
-        transform: rotate(180deg);
-        &:hover {
-          background-image: url('/src/images/about/next-hover.svg');
-        }
+        left: 20%;
       }
       &.slick-next {
-        right: 185px;
-        background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
-        &:hover {
-          background-image: url('/src/images/about/next-hover.svg');
-        }
+        right: 20%;
       }
     }
   }
-}
-
-@include small {
-  .about {
-    &__slider {
-      .slick-dots {
-        max-width: 210px;
-        margin: 0 auto;
-        li {
-          width: 60px;
-          height: 50px;
-        }
-        li.slick-active {
-          button {
-            margin-top: 12.5px;
-            width: 45px;
-            height: 45px;
-            opacity: 1;
-          }
-        }
+  @include x-small {
+    .slick-arrow {
+      &.slick-prev {
+        left: 5%;
       }
-      .slick-arrow {
-        bottom: 0px;
-        &.slick-prev {
-          left: 20%;
-        }
-        &.slick-next {
-          right: 20%;
-        }
-      }
-    }
-  }
-}
-
-@include x-small {
-  .about {
-    &__slider {
-      .slick-arrow {
-        &.slick-prev {
-          left: 5%;
-        }
-        &.slick-next {
-          right: 5%;
-        }
+      &.slick-next {
+        right: 5%;
       }
     }
   }

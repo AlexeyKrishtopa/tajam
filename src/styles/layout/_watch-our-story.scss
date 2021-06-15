@@ -6,38 +6,86 @@
   padding-bottom: 200px;
   padding-top: 200px;
   @include background-fill();
-  .watch-our-story__play {
+  &__play {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .container {
+  &__container {
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    button {
-      padding: 0;
-      border: none;
-      margin-bottom: 34px;
+  }
+  &__play-button {
+    padding: 0;
+    border: none;
+    margin-bottom: 34px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      max-width: 100px;
+      width: 100%;
+      fill: #fff;
+      transition: all ease-in 0.1s;
+      &:hover {
+        width: 95%;
+        fill: #00e0d0;
+      }
     }
-    button:hover {
-      border: none;
-      background-color: transparent;
+  }
+  &__play-button:hover {
+    border: none;
+    background-color: transparent;
+  }
+  &__play-subtitle {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__modal-video {
+    a.close-modal {
+      background-image: url('/src/images/svg/close-button.svg') !important;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      right: 0 !important;
+      top: -40px !important;
+      transition: all ease-in 0.1s;
+      &:hover {
+        background-image: url('/src/images/svg/close-button-active.svg') !important;
+      }
     }
-    p {
-      text-transform: uppercase;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 0.8px;
-      text-align: center;
-      color: #ffffff;
+    padding: 0 !important;
+    max-width: 690px !important;
+    max-height: 460px !important;
+    width: 100%;
+
+    height: 100%;
+
+    background: transparent !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      font-size: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

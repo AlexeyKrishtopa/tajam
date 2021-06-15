@@ -1,12 +1,5 @@
 const header = document.querySelector('.header')
-const sections = document.querySelectorAll('section')
-const menuLinks = document.querySelectorAll('.header__nav-link')
-const makeActive = (link) => menuLinks[link].classList.add('active')
-const removeActive = (link) => menuLinks[link].classList.remove('active')
-const removeAllActive = () =>
-  [...Array(sections.length).keys()].forEach((link) => removeActive(link))
-const sectionMargin = 200
-let currentActive = 0
+const anchors = document.querySelectorAll('.header__nav-link')
 
 const handleScroll = () => {
   document.addEventListener('scroll', () => {
@@ -16,21 +9,19 @@ const handleScroll = () => {
     } else {
       header.classList.add('_is_scrolling')
     }
-
-    const current =
-      sections.length -
-      [...sections]
-        .reverse()
-        .findIndex(
-          (section) => window.scrollY >= section.offsetTop - sectionMargin
-        ) -
-      1
-    if (current !== currentActive) {
-      removeAllActive()
-      currentActive = current
-      makeActive(current)
-    }
   })
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const anchor of anchors) {
+    anchor.addEventListener('click', (event) => {
+      event.preventDefault()
+      const blockId = anchor.getAttribute('href')
+      window.scrollTo({
+        top: +document.querySelector(`${blockId}`).offsetTop - 70,
+        behavior: 'smooth',
+      })
+    })
+  }
 }
 
 export default handleScroll

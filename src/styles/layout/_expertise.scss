@@ -50,10 +50,6 @@
     text-align: center;
     color: rgba(51, 51, 51, 0.75);
   }
-  &__item:nth-child(1) {
-  }
-  &__item:nth-child(2) {
-  }
   &__item:nth-child(3) {
     border-right: none;
   }
@@ -68,11 +64,7 @@
     border-right: none;
   }
   &__item:hover {
-    background-color: #4aa3cc;
-    .expertise__title,
-    .expertise__description {
-      color: #ebebeb;
-    }
+    background-color: #ebebeb;
   }
   @include medium {
     &__item:nth-child(2n) {

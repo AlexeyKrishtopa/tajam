@@ -87,7 +87,7 @@
         </div>
       </header>
       <section class="intro" id="intro">
-        <div class="intro_container container">
+        <div class="intro__container container">
           <div class="intro__slider">
             <div class="intro__slider-item">
               <h2>We Are Awesome Creative Agency</h2>
@@ -184,38 +184,64 @@
       <section class="watch-our-story" id="watch-our-story">
         <div class="watch-our-story__container container">
           <div class="watch-our-story__play">
-            <button class="watch-our-story__slider-item tajam-button">
+            <a
+              href="#modal-video"
+              rel="modal:open"
+              class="watch-our-story__play-button tajam-button"
+              target="_blank"
+            >
               <svg
-                id="Play_Icon"
-                data-name="Play Icon"
+                version="1.1"
+                id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="103"
-                height="103"
-                viewBox="0 0 103 103"
+                x="0px"
+                y="0px"
+                viewBox="0 0 60 60"
+                style="enable-background: new 0 0 60 60"
+                xml:space="preserve"
               >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: none;
-                      stroke: #fff;
-                      stroke-width: 3px;
-                    }
-                  </style>
-                </defs>
-                <circle id="outline" class="cls-1" cx="51.5" cy="51.5" r="50" />
-                <image
-                  id="play"
-                  x="36.5"
-                  y="28.5"
-                  width="37"
-                  height="45"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAACwElEQVRYhcXZX2hPYRzH8Y81yoobZf6lXJh/oYgkN0jTFFrUSKj5kxS5cKUoWaEl5UYuRqJdiPzd/Ffyc8GNYrYllHYxYhckSe2tZz1nnc6e57f9fr/zO8+3vr+L55zf2Wvf77PnPOdMwBQgB3wH2oGVgEKm+bjL0DgPjA8FMx+/HSgTvcDOEKgKaSBdUS3poqR2SbM855QlDOifvTCSHkjqTfygtZI6JR3LTAX8jLVsBTAOuOVp6TtgTRZzKo7aHTtYD3zw4FqACVmhGhMnVADHPbA+YFcIVJRz87T0ETA/BCrKzcBnD+5EKJTJ0Rbgii6gLgQq3tI2D+4qUF0syrdwjiTeS6qT1CCpJ3H+VkndkvalsU4VUql4VgHNnqo9BhZl1T5XLgDue3AngVEhUFHuAHocsE5gQyjUcC1tBSaHQEW5BHjogP0CDoRCRbkd+OrA5Sx88NxSloRC47KkGklnE99bLumVpGZJY9JcEopp6VNH1T4BNVlWKh6vJa2S1Gg3kP322AxJN0KhomiRtFrSt9jYvNCobZLaJE2MjXVUBsIslHRKUm1i3NxDN2VdqSqLeeMAnZM0W1JXlpVqsH/2UxPjZtIfkpSLBrKolGnVPUmtCdBfSYclLY2DBqKM65TZoTZ57n3XgelZ3/u22IUwGR/tPj/v99NGzQFue6pzxlZv2OukhcrXqufAskKulwaq3tMq8zbnYDG/ZCko8zRz01Md8zQzrdhpUAzK7LOPejBmIm8scV4WjFoPdHtAp4HKUkGFoGYC1zwYM5EXp4EpBHUE6HdgzB57f5oYH2pP7OA6oMNTnSvApHKAXCjzJm9snlZ1W2xZMC6UadEd4IsH1DTSJ9w0UH88iCiepP1SbLisiG3ak9Enaa/dQ7/NYIszGAb1zDF+yT6jXcgSMxj2fzMvgR/AC6A2y1YNSdB/IZYgsGBnsLcAAAAASUVORK5CYII="
-                />
+                <g>
+                  <path
+                    d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+        c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+        C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"
+                  />
+                  <path
+                    d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+        S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
               </svg>
-            </button>
-            <p>watch our story</p>
+            </a>
+            <p class="watch-our-story__play-subtitle">watch our story</p>
           </div>
+        </div>
+        <div id="modal-video" class="watch-our-story__modal-video modal">
+          <iframe
+            width="460"
+            height="230"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&amp;cc_load_policy=1&amp;color=null&amp;controls=1&amp;disablekb=0&amp;enablejsapi=0&amp;end=null&amp;fs=1&amp;h1=null&amp;iv_load_policy=1&amp;list=null&amp;listType=null&amp;loop=0&amp;modestbranding=null&amp;mute=0&amp;origin=null&amp;playlist=null&amp;playsinline=null&amp;rel=0&amp;showinfo=1&amp;start=0&amp;wmode=transparent&amp;theme=dark&amp;nocookie=false"
+            frameborder="0"
+            allowfullscreen="true"
+            tabindex="-1"
+            allow="autoplay"
+          ></iframe>
         </div>
       </section>
       <section class="expertise" id="expertise">
@@ -412,7 +438,9 @@
             <p class="team__moto">
               Become part of our dream team, let’s join us !
             </p>
-            <button class="team__join-button tajam-button">WE ARE HIRING</button>
+            <button class="team__join-button tajam-button">
+              WE ARE HIRING
+            </button>
           </div>
         </div>
       </section>
@@ -598,7 +626,9 @@
               </div>
             </div>
           </div>
-          <button class="our-works__load-more-button tajam-button">load more</button>
+          <button class="our-works__load-more-button tajam-button">
+            load more
+          </button>
         </div>
       </section>
       <section class="about" id="about">
@@ -707,8 +737,16 @@
                 give a good news
               </h3>
               <form class="contact__massage-from tajam-form" action="#">
-                <input class="form-controll tajam-input" type="text" placeholder="Name" />
-                <input class="form-controll tajam-input" type="email" placeholder="Email" />
+                <input
+                  class="form-controll tajam-input"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="form-controll tajam-input"
+                  type="email"
+                  placeholder="Email"
+                />
                 <input
                   class="form-controll tajam-input"
                   type="text"
@@ -719,7 +757,9 @@
                   type="text"
                   placeholder="Your Massage"
                 ></textarea>
-                <button class="contact__submit tajam-button" type="submit">SUBMIT</button>
+                <button class="contact__submit tajam-button" type="submit">
+                  SUBMIT
+                </button>
               </form>
             </div>
             <div class="contact__client">
@@ -963,7 +1003,10 @@
                   type="text"
                   placeholder="Subscribe our newsletter"
                 />
-                <button class="footer__in-touch-submit tajam-button" type="submit">
+                <button
+                  class="footer__in-touch-submit tajam-button"
+                  type="submit"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1189,3 +1232,5 @@
     </div>
   </body>
 </html>
+
+
