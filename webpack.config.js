@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
+  context: path.resolve(__dirname, './src'),
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, './dist'),

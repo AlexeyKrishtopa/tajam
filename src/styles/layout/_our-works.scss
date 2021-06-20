@@ -20,7 +20,7 @@
   &__gallery-wrapper {
     position: relative;
     width: 100%;
-    padding-top: calc(200% * 100 / 267);
+    padding-top: calc(200 * 100% / 267);
     box-sizing: border-box;
   }
   &__link {
@@ -76,7 +76,7 @@
       position: absolute;
       right: -18px;
       bottom: 10%;
-      background: url('/src/images/our-works/arrow.png');
+      background: url('../images/our-works/arrow.png');
       width: 8px;
       height: 13px;
     }

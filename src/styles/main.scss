@@ -6,13 +6,13 @@
 @import './abstract/fonts';
 @import './abstract/variables';
 @import './abstract/mixins/_background-fill';
-@import '/src/styles/abstract/mixins/breakpoint';
+@import './abstract/mixins/breakpoint';
 
-@import '/src/styles/components/button';
-@import '/src/styles/components/input';
-@import '/src/styles/components/form';
-@import '/src/styles/components/block-logo';
-@import '/src/styles/components/main-logo';
+@import './components/button';
+@import './components/input';
+@import './components/form';
+@import './components/block-logo';
+@import './components/main-logo';
 
 @import './layout/header';
 @import './layout/intro';

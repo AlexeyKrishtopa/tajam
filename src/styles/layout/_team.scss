@@ -1,8 +1,8 @@
-@import '/src/styles/components/cards-item';
+@import '../components/cards-item';
 .team {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: url('/src/images/seconds-forest-background.png') 0 0 / cover
+  background: url('../images/seconds-forest-background.png') 0 0 / cover
     no-repeat;
   display: flex;
   justify-content: center;

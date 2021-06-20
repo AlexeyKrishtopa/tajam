@@ -1,6 +1,6 @@
 .about {
   @include background-fill();
-  background: url('/src/images/third-forest-background.png') 0 0 / cover;
+  background: url('../images/third-forest-background.png') 0 0 / cover;
   padding: 70px 0;
   &__body {
     max-width: 870px;
@@ -18,7 +18,7 @@
     display: block;
     width: 32px;
     height: 26px;
-    background: url('/src/images/about/quotes.png') 0 0 / 100% no-repeat;
+    background: url('../images/about/quotes.png') 0 0 / 100% no-repeat;
   }
   &__item-text {
     text-indent: 20px;
@@ -99,7 +99,7 @@
       button {
         width: 100%;
         height: 100%;
-        background: url('/src/images/team/lil-krystalll.png') 0 0 / cover;
+        background: url('../images/team/lil-krystalll.png') 0 0 / cover;
         opacity: 0.5;
         border: none;
         font-size: 0;
@@ -127,17 +127,17 @@
     transition: all ease-in 0.2s;
     &.slick-prev {
       left: 240px;
-      background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+      background: url('../images/about/next.svg') 0 0 / 100% no-repeat;
       transform: rotate(180deg);
       &:hover {
-        background-image: url('/src/images/about/next-hover.svg');
+        background-image: url('../images/about/next-hover.svg');
       }
     }
     &.slick-next {
       right: 240px;
-      background: url('/src/images/about/next.svg') 0 0 / 100% no-repeat;
+      background: url('../images/about/next.svg') 0 0 / 100% no-repeat;
       &:hover {
-        background-image: url('/src/images/about/next-hover.svg');
+        background-image: url('../images/about/next-hover.svg');
       }
     }
   }

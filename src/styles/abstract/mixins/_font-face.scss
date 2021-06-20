@@ -3,10 +3,10 @@
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
-    src: url('/src/fonts/converted/#{$file-path}.eot');
-    src: local('☺'), url('/src/fonts/converted/#{$file-path}.woff') format('woff'),
-      url('/src/fonts/converted/#{$file-path}.ttf') format('truetype'),
-      url('/src/fonts/converted/#{$file-path}.svg') format('svg');
+    src: url('../fonts/converted/#{$file-path}.eot');
+    src: local('☺'), url('../fonts/converted/#{$file-path}.woff') format('woff'),
+      url('../fonts/converted/#{$file-path}.ttf') format('truetype'),
+      url('../fonts/converted/#{$file-path}.svg') format('svg');
   }
 }
 

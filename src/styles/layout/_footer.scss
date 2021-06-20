@@ -1,6 +1,6 @@
 .footer {
   @include background-fill();
-  background: url('/src/images/office-background.png') 0 0 / cover no-repeat;
+  background: url('../images/office-background.png') 0 0 / cover no-repeat;
   &__container {
     padding: 70px 10px;
   }
@@ -48,7 +48,7 @@
       position: absolute;
       width: 14px;
       height: 19px;
-      background: url('/src/images/footer/adress.png');
+      background: url('../images/footer/adress.png');
       top: 5px;
       left: 0;
     }
@@ -62,7 +62,7 @@
       position: absolute;
       width: 17px;
       height: 17px;
-      background: url('/src/images/footer/phone.png');
+      background: url('../images/footer/phone.png');
       top: 5px;
       left: 0;
     }
